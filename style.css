@@ -1,0 +1,119 @@
+/* Variables */
+:root {
+  --background-color: #967d00;
+  --container-color: #f0c800;
+  --hover-color: #f7ecb5;
+  --font-family: monospace;
+  --font-weight: bold;
+  --border-radius: 10px;
+  --border-width: 5px;
+  --text-shadow-color: #f0c800;
+  --button-padding: 10px 15px;
+  --button-radius: 10px;
+  --transition-duration: 0.5s;
+
+  /* Button Colors */
+  --start-color: #33ff33;
+  --start-hover-color: #00e600;
+  --stop-color: #ff3333;
+  --stop-hover-color: #da0b0b;
+  --reset-color: #4b7ae7;
+  --reset-hover-color: #124cd3;
+}
+
+/* Base Styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.75em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--container-color);
+  background-color: var(--container-color);
+  transition: background-color var(--transition-duration) ease;
+}
+
+.container:hover {
+  background-color: var(--hover-color);
+}
+
+#clock {
+  text-align: center;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px var(--text-shadow-color);
+}
+
+.btn-container {
+  display: flex;
+  margin: 2.5% 15%;
+}
+
+button {
+  width: 50%;
+  height: 30%;
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+  cursor: pointer;
+  font-weight: bolder;
+  color: mintcream;
+  margin: 5px;
+  transition: background-color var(--transition-duration) ease;
+}
+
+/* Button Styles */
+#start {
+  background-color: var(--start-color);
+}
+
+#start:hover {
+  background-color: var(--start-hover-color);
+}
+
+#start:active {
+  background-color: var(--start-color);
+}
+
+#stop {
+  background-color: var(--stop-color);
+}
+
+#stop:hover {
+  background-color: var(--stop-hover-color);
+}
+
+#stop:active {
+  background-color: var(--stop-color);
+}
+
+#reset {
+  background-color: var(--reset-color);
+}
+
+#reset:hover {
+  background-color: var(--reset-hover-color);
+}
+
+#reset:active {
+  background-color: var(--reset-color);
+}
